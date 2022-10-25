@@ -96,8 +96,6 @@ class _LoginForm extends StatelessWidget {
               onPressed: loginForm.isLoading
                   ? null
                   : () async {
-                      //TODO: Login form
-
                       FocusScope.of(context).unfocus(); //quitar teclado
 
                       if (!loginForm.isValidForm()) return;
@@ -106,7 +104,6 @@ class _LoginForm extends StatelessWidget {
 
                       await Future.delayed(const Duration(seconds: 2));
 
-                      //TODO: Validar si el login es correcto
                       loginForm.isLoading = false;
 
                       Navigator.pushNamed(context, 'home');
