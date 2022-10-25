@@ -15,9 +15,9 @@ class LoginFormProvider extends ChangeNotifier {
   }
 
   bool isValidForm() {
-    print(formKey.currentState?.validate());
+    //print(formKey.currentState?.validate());
 
-    print('$email - $password');
+    //print('$email - $password');
 
     return formKey.currentState?.validate() ?? false;
   }
